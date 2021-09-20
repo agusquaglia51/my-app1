@@ -4,13 +4,14 @@ import{
     FETCHING_INFO_SUCCESS
 } from './infoActionTypes'
 
+//state type
 export interface infoState{
     isFetching: boolean,
     success: boolean,
     errors: string,
     searchResult: Array<Object>
 }
-//
+//initial state
 const initialState ={
     isFetching: false,
     success: false,
@@ -18,7 +19,7 @@ const initialState ={
     searchResult: [],
 }
 
-//REDUCER
+//REDUCER 
 const infoReducer = (state:infoState = initialState, action:any):infoState =>{
     switch(action.type){
         case FETCHING_INFO:{
