@@ -1,5 +1,5 @@
 import FlatList from '../components/FlatList';
-
+//view
 function MainView(){
     
     return(

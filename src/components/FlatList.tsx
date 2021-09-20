@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import { fetchData } from '../reducers/info/infoActions';
 import { RootState } from '../reducers';
 
+//components
 function FlatList() {
     //
     const dispatch = useDispatch();

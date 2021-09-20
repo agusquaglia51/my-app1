@@ -19,10 +19,11 @@ export const getDataSucces = (data:Object) =>({
     payload: {data}
 })
 
+// 
 export const fetchData = () => (dispatch:any) => {
         dispatch(getData())
         return bringPokemons()  
-            .then(response => {
+            .then(response => {    
                 dispatch(getDataSucces(response.data.results))
             })
             .catch(error => {
