@@ -3,7 +3,7 @@ import { fetchData } from '../reducers/info/infoActions';
 import { RootState } from '../reducers';
 
 function FlatList() {
-
+    //
     const dispatch = useDispatch();
     const info = useSelector((state:RootState) => state.information)
     return(
